@@ -9,7 +9,7 @@
 		android:layout_width="match_parent"
 		android:layout_height="match_parent" >
 
-		<ScrollView
+		<android.support.v4.widget.NestedScrollView
 			android:id="@+id/scroll_view"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent" >
@@ -25,9 +25,9 @@
 					android:layout_height="900dp"
 					android:background="#ffceaaaa"
 					android:gravity="center"
-					android:text="I am in ScrollView" />
+					android:text="I am in NestedScrollView" />
 			</RelativeLayout>
-		</ScrollView>
+		</android.support.v4.widget.NestedScrollView>
 	</com.github.nuptboyzhb.lib.SuperSwipeRefreshLayout>
 
 </RelativeLayout>

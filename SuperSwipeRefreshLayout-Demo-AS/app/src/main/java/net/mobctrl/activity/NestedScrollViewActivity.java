@@ -1,7 +1,5 @@
 package net.mobctrl.activity;
 
-import net.mobctrl.treerecyclerview.R;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Handler;
@@ -13,12 +11,14 @@ import android.widget.TextView;
 
 import com.github.nuptboyzhb.lib.SuperSwipeRefreshLayout;
 
+import net.mobctrl.treerecyclerview.R;
+
 /**
  * @Author Zheng Haibo
  * @PersonalWebsite http://www.mobctrl.net
  * @Description
  */
-public class ScrollViewActivity extends Activity {
+public class NestedScrollViewActivity extends Activity {
 
     private SuperSwipeRefreshLayout swipeRefreshLayout;
 

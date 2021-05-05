@@ -1,17 +1,32 @@
+
 # SuperSwipeRefreshLayout
 
-A Custom SwipeRefreshLayout.自定义HeaderView和FooterView，支持下拉刷新和上拉加载更多
+A custom SwipeRefreshLayout to support the pull-to-refresh featrue.You can custom your header view and footer view. RecyclerView，ListView，GridView，NestedScrollView，ScrollView are supported.
 
-##Why？
-- 1.本来SwipeRefreshLayout已经能够满足大部分的需求了。无奈，产品经理执意要做成下拉过程中，被嵌套的View也要跟随手指的滑动而滑动，并且下拉刷新头可以自定义。<br>
-- 2.应大家要求，添加下拉加载更多<br>
+## aar
 
-##Feature
+```
+allprojects {
+    repositories {
+        jcenter()
+        maven {
+            url  "http://dl.bintray.com/nuptboyzhb/maven"
+        }
+    }
+}
+```
+
+```
+compile 'com.github.nuptboyzhb.lib.uikit:superswiperefreshlayout:1.0.0'
+```
+
+
+## Feature
 - 支持下拉刷新和上拉加载更多，使用极其方便。
 - 非侵入式，对原来的ListView、RecyclerView没有任何影响,用法和SwipeRefreshLayout类似。
 - 可自定义头部View的样式，调用setHeaderView方法即可。
 - 可自定义页尾View的样式，调用setFooterView方法即可。
-- 支持RecyclerView，ListView，ScrollView，GridView等等。
+- 支持RecyclerView，ListView，ScrollView，GridView,NestedScrollView等等。
 - 被包含的View(RecyclerView,ListView etc.)可跟随手指的滑动而滑动<br>
   默认是跟随手指的滑动而滑动，也可以设置为不跟随：setTargetScrollWithLayout(false)
 - 回调方法更多<br>
@@ -19,12 +34,12 @@ A Custom SwipeRefreshLayout.自定义HeaderView和FooterView，支持下拉刷�
   开发人员可以根据下拉过程中distance的值做一系列动画。
 <br>
 
-##Pull To Refresh(How to Use)
+## Pull To Refresh(How to Use)
 
 ### Step 1: In XML
 
 ```xml
-<net.mobctrl.views.SuperSwipeRefreshLayout
+<com.github.nuptboyzhb.lib.SuperSwipeRefreshLayout
 		android:id="@+id/swipe_refresh"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent" >
@@ -33,7 +48,7 @@ A Custom SwipeRefreshLayout.自定义HeaderView和FooterView，支持下拉刷�
 			android:id="@+id/recycler_view"
 			android:layout_width="match_parent"
 			android:layout_height="match_parent" />
-</net.mobctrl.views.SuperSwipeRefreshLayout>
+</com.github.nuptboyzhb.lib.SuperSwipeRefreshLayout>
 ```
 ### Step 2: Init and setListener
 
@@ -109,8 +124,11 @@ swipeRefreshLayout.setHeaderViewBackgroundColor(0xff888888);
 - setDefaultCircleShadowColor
   <br>
   设置默认圆形的阴影颜色
+- setEnable
+  <br>
+  设置是否禁用下拉刷新，默认是使用
 
-##Push to Load More
+## Push to Load More
 当拉倒底部时，上拉加载更多
 
 ### setListener
@@ -169,11 +187,11 @@ swipeRefreshLayout.setFooterView(createFooterView());
 
 ## About
 @Author: Zheng Haibo 莫川<br>
-@Website: www.mobctrl.net<br>
+@Website: [https://github.com/nuptboyzhb](https://github.com/nuptboyzhb)<br>
 
 # License
 
-Copyright 2015  [Zheng Haibo](https://github.com/nuptboyzhb/)
+Copyright 2015-2016  [Zheng Haibo](https://github.com/nuptboyzhb/)
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
