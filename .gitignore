@@ -1,4 +1,5 @@
 # Built application files
+*.iml
 *.apk
 *.ap_
 
@@ -13,7 +14,7 @@ bin/
 gen/
 
 # Gradle files
-.gradle/
+/.gradle
 build/
 /*/build/
 
@@ -28,4 +29,5 @@ proguard/
 
 *.imp
 
-.idea/
+/.idea
+import-summary.txt
