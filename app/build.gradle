@@ -3,6 +3,8 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 33
     
+    namespace "net.mobctrl.treerecyclerview"
+    
     defaultConfig {
         applicationId "com.github.nuptboyzhb.superswipe"
         minSdkVersion 21
