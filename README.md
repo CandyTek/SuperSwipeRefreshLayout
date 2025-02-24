@@ -8,16 +8,16 @@ A custom SwipeRefreshLayout to support the pull-to-refresh featrue.You can custo
 ```
 allprojects {
     repositories {
-        jcenter()
-        maven {
-            url  "http://dl.bintray.com/nuptboyzhb/maven"
-        }
+		google()
+		mavenCentral()
+		gradlePluginPortal()
+		maven { url "https://jitpack.io" }
     }
 }
 ```
 
 ```
-compile 'com.github.nuptboyzhb.lib.uikit:superswiperefreshlayout:1.0.0'
+implementation 'com.github.CandyTek:SuperSwipeRefreshLayout:1.2'
 ```
 
 
